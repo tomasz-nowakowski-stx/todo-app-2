@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1>Todo App</h1>
-    <TasksList />
+    <TasksList :tasks="tasks" />
   </div>
 </template>
 

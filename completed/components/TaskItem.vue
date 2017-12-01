@@ -1,7 +1,7 @@
 <template>
   <li class="list-group-item" :class="{completed: task.done}">
     <div v-if="!isEditing">
-      <span class="title">{{task.title}}</span>
+      <span class="name">{{task.name}}</span>
       <div class="pull-right">
         <button class="btn btn-primary btn-xs" v-show="task.done" @click="completeTask()">
           <span class="glyphicon glyphicon-remove"></span>
@@ -19,7 +19,7 @@
     </div>
     <div class="form" v-if="isEditing">
       <div class="input-group">
-        <input v-model="task.title" type="text" class="form-control">
+        <input v-model="task.name" type="text" class="form-control">
         <span class="input-group-btn">
         <button @click="hideForm" class="btn btn-default" type="button">
           <span class="glyphicon glyphicon-remove"></span> Close
@@ -67,7 +67,7 @@
     background: #e0f4ec;
   }
 
-  .completed .title {
+  .completed .name {
     color: #37893a;
     text-decoration: line-through;
   }

@@ -27,19 +27,19 @@ export default {
     return {
       tasks: [{
         id: 1,
-        title: 'Learn Vue.js 2',
+        name: 'Learn Vue.js 2',
         done: false,
       }, {
         id: 2,
-        title: 'Learn about Progressive Web Apps',
+        name: 'Learn about Progressive Web Apps',
         done: true,
       }, {
         id: 3,
-        title: 'Learn about Server-Side Rendering',
+        name: 'Learn about Server-Side Rendering',
         done: false,
       }, {
         id: 4,
-        title: 'Buy yourself a beer',
+        name: 'Buy yourself a beer',
         done: false,
       }],
     };

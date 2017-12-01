@@ -6,8 +6,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "completed": "cross-env NODE_ENV=development webpack-dev-server --hot --env=completed",
     "exercise-1": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-1",
-    "exercise-2": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-2"
+    "exercise-2": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-2",
+    "exercise-2.1": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-2.1",
+    "exercise-3": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-3",
+    "exercise-4": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-4"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
