@@ -11,7 +11,10 @@
     "exercise-2": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-2",
     "exercise-2.1": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-2.1",
     "exercise-3": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-3",
-    "exercise-4": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-4"
+    "exercise-4": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-4",
+    "exercise-5": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-5",
+    "exercise-6": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-6",
+    "exercise-7": "cross-env NODE_ENV=development webpack-dev-server --hot --env=exercise-7"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",

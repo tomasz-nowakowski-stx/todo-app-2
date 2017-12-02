@@ -1,10 +1,7 @@
 <template>
-  <div>
-    <p>Completed Tasks: {{completedTasks.length}}</p>
-    <ul class="list-group">
-      <TaskItem v-for="task in tasks" :task="task" :key="task.id" @delete-task="deleteTask" />
-    </ul>
-  </div>
+  <ul class="list-group">
+    <TaskItem v-for="task in tasks" :task="task" :key="task.id" @delete-task="deleteTask" />
+  </ul>
 </template>
 
 <script>
@@ -18,11 +15,6 @@
       tasks: {
         type: Array,
         required: true,
-      },
-    },
-    computed: {
-      completedTasks: function () {
-        return this.tasks.filter(task => task.done === true);
       },
     },
     methods: {

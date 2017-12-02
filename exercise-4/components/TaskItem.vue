@@ -1,17 +1,11 @@
 <template>
-  <li class="list-group-item" :class="{completed: task.done}">
+  <li class="list-group-item">
     <div v-if="!isEditing">
       <span class="name">{{task.name}}</span>
+      <span class="glyphicon glyphicon-ok" v-show="task.done"></span>
       <div class="pull-right">
-        <button class="btn btn-primary btn-xs" @click="completeTask()">
-          <span class="glyphicon glyphicon-remove" v-show="task.done"></span>
-          <span class="glyphicon glyphicon-ok" v-show="!task.done"></span>
-        </button>
         <button class="btn btn-default btn-xs" @click="showForm()">
           <span class="glyphicon glyphicon-pencil"></span>
-        </button>
-        <button class="btn btn-danger btn-xs" @click="deleteTask()">
-          <span class="glyphicon glyphicon-trash"></span>
         </button>
       </div>
     </div>
@@ -26,6 +20,7 @@
       </div>
     </div>
   </li>
+
 </template>
 
 
@@ -49,24 +44,6 @@
       hideForm() {
         this.isEditing = false;
       },
-      deleteTask() {
-        this.$emit('delete-task', this.task);
-      },
-      completeTask() {
-        this.task.done = !this.task.done;
-      },
     },
   };
 </script>
-
-
-<style scoped>
-  .completed {
-    background: #e0f4ec;
-  }
-
-  .completed .name {
-    color: #37893a;
-    text-decoration: line-through;
-  }
-</style>

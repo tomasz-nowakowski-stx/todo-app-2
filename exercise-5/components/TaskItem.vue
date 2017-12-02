@@ -10,9 +10,6 @@
         <button class="btn btn-default btn-xs" @click="showForm()">
           <span class="glyphicon glyphicon-pencil"></span>
         </button>
-        <button class="btn btn-danger btn-xs" @click="deleteTask()">
-          <span class="glyphicon glyphicon-trash"></span>
-        </button>
       </div>
     </div>
     <div class="form" v-if="isEditing">
@@ -48,9 +45,6 @@
       },
       hideForm() {
         this.isEditing = false;
-      },
-      deleteTask() {
-        this.$emit('delete-task', this.task);
       },
       completeTask() {
         this.task.done = !this.task.done;

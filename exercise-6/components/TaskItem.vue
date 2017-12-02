@@ -3,11 +3,9 @@
     <div v-if="!isEditing">
       <span class="name">{{task.name}}</span>
       <div class="pull-right">
-        <button class="btn btn-primary btn-xs" v-show="task.done" @click="completeTask()">
-          <span class="glyphicon glyphicon-remove"></span>
-        </button>
-        <button class="btn btn-primary btn-xs" v-show="!task.done" @click="completeTask()">
-          <span class="glyphicon glyphicon-ok"></span>
+        <button class="btn btn-primary btn-xs" @click="completeTask()">
+          <span class="glyphicon glyphicon-remove" v-show="task.done"></span>
+          <span class="glyphicon glyphicon-ok" v-show="!task.done"></span>
         </button>
         <button class="btn btn-default btn-xs" @click="showForm()">
           <span class="glyphicon glyphicon-pencil"></span>
@@ -55,7 +53,7 @@
         this.$emit('delete-task', this.task);
       },
       completeTask() {
-        this.$emit('complete-task', this.task);
+        this.task.done = !this.task.done;
       },
     },
   };
