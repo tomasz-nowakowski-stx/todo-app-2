@@ -1,6 +1,4 @@
-# test
-
-> A Vue.js project
+# JS Has Power - Vue.js 2 basics
 
 ## Build Setup
 
@@ -8,11 +6,14 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+# use one of these serve with hot reload at localhost:8080
+npm run completed
+npm run exercise-1
+npm run exercise-2
+npm run exercise-2.1
+npm run exercise-3
+npm run exercise-4
+npm run exercise-5
+npm run exercise-6
+npm run exercise-7
 ```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
